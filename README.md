@@ -14,6 +14,8 @@ In-built Features
 * Bootstrap sass, js both compiled and attached to theme.
 * jQuery compiled before bootstrap js and attached to theme. 
 * Wordpress responsive menu `sliknav` sass js comiled and attached to theme.  
+* In built Image Compression. (related to loading speed).
+* JS and SASS hint for comilation error will come at cmd.
 
 Environment
 ------------
