@@ -1,0 +1,26 @@
+{
+  "name": "Gulpify",
+  "description": "Just make CSS 7 JS new approach",
+  "main": "package.json",
+  "authors": [
+    "Kaushik"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Awesome",
+    "fri=ontend"
+  ],
+  "homepage": "www.citytechcorp.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
+}
