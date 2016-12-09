@@ -40,6 +40,7 @@ Where to write SASS and js?
 After successful installation the following two directory will be your working Dir.
 * FOR SASS `assets-input/css/input.scss` write here your sass code.
 * For Custom js DONT ADD IT HEADER OR ENQUE IT FROM FUNCTIONS, just place the js file as many as you can at `assets-input/js/` directory thats it. Js will taking care all of script and make it available at frontend.
+* For sass images put images at `assets-input/images` directory. 
 
 Now you're ready to go! The next step is easy to say. :)
 
