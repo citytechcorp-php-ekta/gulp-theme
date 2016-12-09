@@ -10,20 +10,20 @@ How awesome, isn't it? Let me describe how would you make it happen.
 Environment
 ------------
 Following things should be installed in your system.
-* Node JS and NPM.
-* check node -v and npm-v
-* Installing Gulp & Bower & node sass by- npm install -g gulp bower node-sass
+* Node JS and NPM. for linux follow https://nodejs.org/en/download/package-manager/.
+* check `node -v` and `npm-v`
+* Installing Gulp & Bower & node sass by- `npm install -g gulp bower node-sass`
 
 Installation
 ------------
 After setting up configuration you can follow the steps given below.
 * Open CMD or Gitbas or Putty to go dev folder and cd to wp theme directory like /project/wp-content/themes
-* Clone this repo on to thems directory by - git clone https://github.com/citytechcorp-php-ekta/gulp-theme
+* Clone this repo on to thems directory by - `git clone https://github.com/citytechcorp-php-ekta/gulp-theme`
 * Then make it active by wp-admin > Apparence > theme.
-* bower install
-* npm install
-* gulp
-* gulp watch
+* `bower install`
+* `npm install`
+* `gulp`
+* `gulp watch`
 
 
 
