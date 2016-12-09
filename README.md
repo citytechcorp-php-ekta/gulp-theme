@@ -3,15 +3,17 @@
 Gulp and Wordpress Theme
 ===
 
-Hi. I'm a starter wp theme called `gulp-theme`, my moto is making development firster than ever and deploying them easier than ever and lastly site will load faster than ever.
+Hi. I'm a starter wp theme called `gulp-theme`, my moto is making wp development faster than ever and deploying theme easier than ever and lastly site will load faster than ever.
 
 How awesome, isn't it? Let me describe how would you make it happen.
+
+--Remember-- I am a virgin theme, that's why I dont have my style, you can make me as you like me.
 
 In-built Features
 -----------------
 * Bootstrap sass, js both compiled and attached to theme.
 * jQuery compiled before bootstrap js and attached to theme. 
-* Wordpress responsive menu `sliknav` sass js comiled and attached to theme. 
+* Wordpress responsive menu `sliknav` sass js comiled and attached to theme.  
 
 Environment
 ------------
