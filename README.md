@@ -7,6 +7,12 @@ Hi. I'm a starter wp theme called `gulp-theme`, my moto is making development fi
 
 How awesome, isn't it? Let me describe how would you make it happen.
 
+In-built Features
+-----------------
+* Bootstrap sass, js both compiled and attached to theme.
+* jQuery compiled before bootstrap js and attached to theme. 
+* Wordpress responsive menu `sliknav` sass js comiled and attached to theme. 
+
 Environment
 ------------
 Following things should be installed in your system.
@@ -26,8 +32,6 @@ After setting up configuration you can follow the steps given below.
 * `gulp watch`
 
 
-
-
-Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
+Now you're ready to go! The next step is easy to say. :)
 
 Good luck!
