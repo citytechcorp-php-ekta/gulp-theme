@@ -1,4 +1,6 @@
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "menu.scss";
+@import "../../bower_components/slicknav/dist/slicknav.css"; 
 $themes: (
   default: #666,
   banana: #f1c40f,
@@ -10,7 +12,7 @@ $themes: (
 
 
 // Helper theme mixin
-// @param $name: name of the theme (HTML class)    
+// @param $name: name of the theme (HTML class)      
 // @param $color: color of the theme
 @mixin theme($name, $color) {
   .#{$name} {
@@ -68,7 +70,7 @@ $themes: (
     float: left;
     width: 24%;
     height: 10em;
-    margin-right: 1%;
+    margin-right: 5%; 
   }
 }
 

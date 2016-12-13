@@ -28,7 +28,8 @@ gulp.src([
 gulp.task('compile-js', function () { 
     gulp.src([
     	'bower_components/jquery/dist/jquery.js', 
-    	'bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
+    	'bower_components/bootstrap-sass/assets/javascripts/bootstrap.js', 
+      'bower_components/slicknav/dist/jquery.slicknav.min.js',
     	'assets-input/js/*.js', 
     	],{base: 'bower_components/'})  
     .pipe(uglify())
@@ -54,5 +55,5 @@ gulp.task('default',['compile-sass','compile-js','imagemin']);
 gulp.task('watch', ['compile-sass','compile-js','imagemin'], function (){ 
   gulp.watch('assets-input/css/*.scss', ['compile-sass']); 
   gulp.watch('assets-input/js/*.js', ['compile-js']);   
-  //gulp.watch('assets-input/images/**/*', ['imagemin']); 
+  gulp.watch('assets-input/images/**/*', ['imagemin']); 
 })
