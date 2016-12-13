@@ -16,13 +16,12 @@ rename = require('gulp-rename');
 gulp.task('compile-sass', function () { 
 
 gulp.src([
-		'./assets-input/css/*.scss',
-		'bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss',
+    './assets-input/css/*.scss',
     		]) 
-	.pipe(sass().on('error', sass.logError))
-  .pipe(rename('final.css'))
+	.pipe(sass().on('error', sass.logError)) 
+  .pipe(concat('final.css')) 
   .pipe(minifyCSS())
-	.pipe(gulp.dest('assets-output/css/'))
+	.pipe(gulp.dest('assets-output/css/')) 
      
 }); 
 
@@ -37,7 +36,7 @@ gulp.task('compile-js', function () {
     .pipe(concat('final.js'))  
     .pipe(gulp.dest('assets-output/js/'));  
      
-});
+}); 
 
 gulp.task('imagemin', function() {
   var imgSrc = './assets-input/images/**/*',

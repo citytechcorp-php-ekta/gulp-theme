@@ -8,6 +8,7 @@
     "gulp": "~3.9.0",
     "gulp-changed": "^1.3.2",
     "gulp-concat": "~2.5.2",
+    "gulp-concat-css": "^2.3.0",
     "gulp-copy": "~0.0.2",
     "gulp-htmlmin": "~1.1.3",
     "gulp-imagemin": "^3.1.1",
@@ -23,8 +24,8 @@
     "merge-stream": "~0.1.7",
     "yargs": "~3.12.0"
   },
-  "main": "gulpfile.js", 
-  "dependencies": { 
+  "main": "gulpfile.js",
+  "dependencies": {
     "gulp-minify-css": "^1.2.4",
     "gulp-changed": "^1.3.2",
     "gulp-rename": "^1.2.2",
@@ -36,5 +37,17 @@
   "scripts": {
     "test": "gulp"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/citytechcorp-php-ekta/gulp-theme.git"
+  },
+  "keywords": [
+    "Gulp",
+    "Wordpress"
+  ],
+  "bugs": {
+    "url": "https://github.com/citytechcorp-php-ekta/gulp-theme/issues"
+  },
+  "homepage": "https://github.com/citytechcorp-php-ekta/gulp-theme#readme"
 }

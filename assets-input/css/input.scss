@@ -1,3 +1,4 @@
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 $themes: (
   default: #666,
   banana: #f1c40f,
@@ -77,7 +78,7 @@ $themes: (
   padding: .5em;
   border-radius: .15em;
   font-weight: bold;
-  margin-bottom: .5em;
+  margin-bottom: .5em; 
 }
 
 body {
