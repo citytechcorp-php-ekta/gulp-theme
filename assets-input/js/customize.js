@@ -6,5 +6,5 @@
 		nestedParentLinks:	true,
 		parentTag:	"a"	,
 		allowParentLinks: true
-	});  
-})(jQuery)      
+	});       
+})(jQuery)        

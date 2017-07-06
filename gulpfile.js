@@ -5,11 +5,13 @@ concat = require("gulp-concat"),
 uglify = require("gulp-uglify"),
 minifyCSS = require('gulp-minify-css'),
 autoprefix = require('gulp-autoprefixer'),
-liveReload = require('gulp-livereload'),
 gutil=require('gutil'),
 changed = require('gulp-changed'),
 imagemin = require('gulp-imagemin'),
 rename = require('gulp-rename'); 
+
+var browserSync = require('browser-sync').create();
+var reload      = browserSync.reload;
 //Error Function
 
 // task
@@ -22,7 +24,7 @@ gulp.src([
   .pipe(concat('final.css')) 
   .pipe(minifyCSS())
 	.pipe(gulp.dest('assets-output/css/')) 
-     
+     .pipe(browserSync.reload({stream: true}));
 }); 
 
 gulp.task('compile-js', function () { 
@@ -35,7 +37,8 @@ gulp.task('compile-js', function () {
     .pipe(uglify())
     .on('error', gutil.log)
     .pipe(concat('final.js'))  
-    .pipe(gulp.dest('assets-output/js/'));  
+    .pipe(gulp.dest('assets-output/js/'))
+     .pipe(browserSync.reload({stream: true})); 
      
 }); 
 
@@ -47,13 +50,27 @@ gulp.task('imagemin', function() {
     .pipe(changed(imgDst))
     .on('error', gutil.log)
     .pipe(imagemin())
-    .pipe(gulp.dest(imgDst));
+    .pipe(gulp.dest(imgDst))
+     .pipe(browserSync.reload({stream: true}));
 }); 
 
 gulp.task('default',['compile-sass','compile-js','imagemin']); 
 
-gulp.task('watch', ['compile-sass','compile-js','imagemin'], function (){ 
+//gulp.task('watch', ['compile-sass','compile-js','imagemin'], function (){ 
+  //gulp.watch('assets-input/css/*.scss', ['compile-sass']); 
+  //gulp.watch('assets-input/js/*.js', ['compile-js']);   
+  //gulp.watch('assets-input/images/**/*', ['imagemin']); 
+//})
+
+gulp.task('watch', function() {
+  browserSync.init({
+    files: ['./**/*.php'],
+    proxy: 'http://192.168.0.222/wp/wp_plugins',
+  });
   gulp.watch('assets-input/css/*.scss', ['compile-sass']); 
-  gulp.watch('assets-input/js/*.js', ['compile-js']);   
-  gulp.watch('assets-input/images/**/*', ['imagemin']); 
-})
+ gulp.watch('assets-input/js/*.js', ['compile-js']);   
+ gulp.watch('assets-input/images/**/*', ['imagemin']); 
+  
+}); 
+
+
