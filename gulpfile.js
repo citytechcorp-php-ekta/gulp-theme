@@ -63,9 +63,11 @@ gulp.task('default',['compile-sass','compile-js','imagemin']);
 //})
 
 gulp.task('watch', function() {
+
   browserSync.init({
     files: ['./**/*.php'],
     proxy: 'http://192.168.0.222/wp/wp_plugins',
+    browser: ["google chrome", "firefox"]
   });
   gulp.watch('assets-input/css/*.scss', ['compile-sass']); 
  gulp.watch('assets-input/js/*.js', ['compile-js']);   
