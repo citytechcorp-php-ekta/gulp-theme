@@ -1,5 +1,9 @@
 
-
+<p align="center">
+  <a href="http://gulpjs.com">
+    <img height="157" width="74" src="https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-1x.png">
+  </a>
+</p>
 Gulp and Wordpress Theme
 ===
 
