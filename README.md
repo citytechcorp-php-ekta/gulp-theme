@@ -32,21 +32,14 @@ After setting up configuration you can follow the steps given below.
 * Then make it active by wp-admin > Apparence > theme.
 * `bower install`
 * `npm install`
-* `gulp`
-* `gulp watch`
-Intoduction to Livereload
+* Follow the `Browser Sync` Method are following...
+
+Intoduction to Browser Sync
 -------------------------
-<ul>
-  <li>
-    <p><a href="http://download.livereload.com/2.1.0/LiveReload-2.1.0.safariextz">Safari extension 2.1.0</a> — note: due to Safari API limitations, browser extension <strong>does not work with file: URLs</strong>; if you’re working with local files via file: URL, please use Chrome or <a href="/browser/script-tag/">insert the SCRIPT snippet</a>.</p>
-  </li>
-  <li>
-    <p><a href="https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei">Chrome extension on the Chrome Web Store</a> — <strong>if you want to use it with local files,</strong> be sure to enable “Allow access to file URLs” checkbox in Tools &gt; Extensions &gt; LiveReload after installation.</p>
-  </li>
-  <li>
-    <p><a href="https://addons.mozilla.org/en-US/firefox/addon/livereload/">Firefox extension 2.1.0</a> from addons.mozilla.org.</p>
-  </li>
-</ul>
+* Open `gulpfile.js` from the theme root.
+* Go bottom of the file and place projects url like `http://192.168.0.99/wp/test` to `proxy:` inside `browserSync.init` function scope.
+* Now go to cmd and write `gulp watch` then edit any css, js file it will refresh browser autometically.
+
 Where to write SASS and js?
 ---------------------------
 After successful installation the following two directory will be your working Dir.
