@@ -1,10 +1,10 @@
 
 <p align="center">
   <a href="http://gulpjs.com">
-    <img height="157" width="84" src="https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png">
-    <img height="157" width="144" src="http://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg">
-    <img height="157" width="190" src="http://s.w.org/about/images/wordpress-logo-notext-bg.png">
-    <img height="157" width="180" src="https://browsersync.io/brand-assets/logo-red.png">
+    <img height="157" title="Gulp" width="84" src="https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png">
+    <img height="157" title="SASS" width="144" src="http://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg">
+    <img height="157" title="Wordpress" width="190" src="http://s.w.org/about/images/wordpress-logo-notext-bg.png">
+    <img height="157" title="Browser Sync" width="180" src="https://browsersync.io/brand-assets/logo-red.png">
   </a>
 </p>
 Gulp and Wordpress Theme
