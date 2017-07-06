@@ -1,7 +1,10 @@
 
 <p align="center">
   <a href="http://gulpjs.com">
-    <img height="157" width="74" src="https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-1x.png">
+    <img height="157" width="74" src="https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png">
+    <img height="157" width="74" src="http://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg">
+    <img height="157" width="74" src="http://s.w.org/about/images/wordpress-logo-notext-bg.png">
+    <img height="157" width="74" src="https://browsersync.io/brand-assets/logo-red.png">
   </a>
 </p>
 Gulp and Wordpress Theme
